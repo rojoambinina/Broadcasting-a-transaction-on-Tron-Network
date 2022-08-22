@@ -1,4 +1,4 @@
-# Broadcasting a transaction on the Tron Network
+# Broadcasting a transaction on Tron Network
 
 For several months, I have seen people posting their passphrases or private keys of their TRX addresses with balances of several thousand USDT on social networks to trick people into collecting TRX. They pretend to have no money left, and encourage you to send some TRX.
 
