@@ -10,10 +10,10 @@ To put into practice everything I said above, I coded a small script that instan
 I leave the private key "**8386338e8b18c8f2ec2089fcc8991b396afa9f0ad668555461d8736bd4d23c08**" and the TRX address "**TGEbBaHpoVXbLzbo1heSENn2GjThAFgT2n**" within the code, so that you can test on Tron Mainnet or Tron Nile networks.
 
 # Usage
-Install Tronpy and Colorama modules
+Open you terminal and type the command below to install Tronpy and Colorama modules.
 
 ## pip install tronpy
 
-You go to the folder where the python file is, then open your usual terminal and type the command below.
+You go to the folder where the python file is, and type the command below to launch the script.
 
 ## py broadcast-transaction.py
