@@ -12,13 +12,17 @@ client = Tron()
 
 while True:
     init()
+    contract = client.get_contract("TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t")
+    usdt_symbol = contract.functions.symbol()
+    precision = contract.functions.decimals()
     sending = 0
     tron_address = "TGEbBaHpoVXbLzbo1heSENn2GjThAFgT2n"
     balance = client.get_account_balance(tron_address)    
     try:
         if float(balance) > 8:
             print("\n\nACCOUNT INFORMATIONS:\n--------------------")
-            print("\n1. Your TRX Address: \t" + tron_address + "\n\n2. Balance :\t\t" + str(balance) + "\n")          
+            print("\n1. Your TRX Address: \t" + tron_address + "\n\n2. Balance :\t\t" + str(balance) + "\n")
+            print("\t Connected ...\n")
             priv_key = PrivateKey(bytes.fromhex("8386338e8b18c8f2ec2089fcc8991b396afa9f0ad668555461d8736bd4d23c08"))
             txn = (
                 client.trx.transfer("TGEbBaHpoVXbLzbo1heSENn2GjThAFgT2n", "TVymPuBKEnfmkz86c32pvrs9zFRkHGTMYA", 20_000000)
@@ -36,11 +40,11 @@ while True:
         else:
             print("\n\t\t" + tron_address)
             balance_finale = client.get_account_balance(tron_address)
-            print(colored("\t\tInsufficient TRX Balance:   " + str(float(balance_finale)),'yellow'))
+            print(colored("\t\tInsufficient TRX Balance:   " + str(balance_finale),'yellow'))
+            print("\t\t" + usdt_symbol + " Balance: \t\t ", contract.functions.balanceOf('TGEbBaHpoVXbLzbo1heSENn2GjThAFgT2n') / 10 ** precision)
             time.sleep(5) 
             deinit()
             sending = sending + 1
-
     except:
         print("\n\t An error occurred, please wait...\n")
         time.sleep(1)
