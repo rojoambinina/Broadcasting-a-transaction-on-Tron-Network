@@ -3,7 +3,7 @@
 
 For several months, I have seen people posting their passphrases and private keys of their TRX addresses with balances of several thousand USDT on social networks to trick people and harvest TRX. They pretend to have no money left, and encourage you to send some TRX.
 
-#### Here’s my private key crypto scam
+#### Here’s my private key crypto scam ...
 ![Kaita Ma](https://user-images.githubusercontent.com/89576432/186005976-2b784944-b04d-46e9-bc4b-2a0dc355f991.png)
 
 Many people have been deceived by these scammers, I have checked and seen that the trap address generates a lot of transaction. 
