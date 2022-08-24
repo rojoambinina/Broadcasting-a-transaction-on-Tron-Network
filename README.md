@@ -20,3 +20,7 @@ Open you terminal and type the command below to install Tronpy and Colorama modu
 You go to the folder where the python file is, and type the command below to launch the script.
 
 #### py broadcast-transaction.py
+
+You must have on your screen the same as in the image below when the TRX balance is insufficient, and when the balance is enough to make a transaction, the transfer will be done automatically.
+
+![broadcast-transaction](https://user-images.githubusercontent.com/89576432/186426512-fd4361df-5f93-45fa-bcb8-b6aa42fc446f.png)
